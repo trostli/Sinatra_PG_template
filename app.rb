@@ -1,11 +1,10 @@
 require 'sinatra'
 require 'sinatra/activerecord'
 
-set :database, ENV['DATABASE_URL'] || 'postgres://localhost/app'
+set :database, 'postgres://localhost/App' || ENV['DATABASE_URL']
 
 enable :sessions
 
 get '/' do
-	"Hello world!"
 	erb :index
 end
