@@ -1,0 +1,1 @@
+My template for Sinatra using PostgreSQL DB. <3 Heroku
